@@ -1,4 +1,4 @@
-##📦 Lost and Found Management System
+## 📦 Lost and Found Management System
 Welcome to the Lost and Found Management System, a sophisticated Java-based desktop application designed to streamline the management of lost and found items in organizations, campuses, or public spaces. Crafted with Java Swing for an intuitive, dark-themed user interface and powered by MySQL for robust data persistence, this system empowers users to register, report, track, and manage items with ease. Whether you're a user searching for a lost item or an admin overseeing operations, this application offers a seamless, secure, and visually appealing experience.
 
 Built with Object-Oriented Programming (OOP) principles at its core, the system ensures modularity, scalability, and maintainability. From user authentication to item tracking and analytics, every feature is designed to be efficient and user-friendly, making lost and found management effortless.
@@ -22,11 +22,11 @@ Built with Object-Oriented Programming (OOP) principles at its core, the system 
 ### 🏛️ OOP Principles Applied
 The system is a showcase of Object-Oriented Programming (OOP) principles, ensuring a maintainable and scalable codebase:
 
--Encapsulation: Data and methods are bundled into classes (e.g., User, Item), with private fields and public getters/setters to protect data integrity.
--Inheritance: Shared behavior is abstracted into base classes or interfaces (e.g., Item as a base for LostItem and FoundItem), promoting code reuse.
--Polymorphism: Dynamic method dispatch allows flexible handling of objects (e.g., ReportService processes both LostItem and FoundItem polymorphically).
--Abstraction: Interfaces and abstract classes (e.g., in dao and service packages) define contracts, hiding implementation details.
--Modularity: The MVC pattern separates concerns, with model for data, ui for views, and service/dao for logic, enhancing maintainability.
+- Encapsulation: Data and methods are bundled into classes (e.g., User, Item), with private fields and public getters/setters to protect data integrity.
+- Inheritance: Shared behavior is abstracted into base classes or interfaces (e.g., Item as a base for LostItem and FoundItem), promoting code reuse.
+- Polymorphism: Dynamic method dispatch allows flexible handling of objects (e.g., ReportService processes both LostItem and FoundItem polymorphically).
+- Abstraction: Interfaces and abstract classes (e.g., in dao and service packages) define contracts, hiding implementation details.
+- Modularity: The MVC pattern separates concerns, with model for data, ui for views, and service/dao for logic, enhancing maintainability.
 
 ### 📁 Project Structure
 ```
