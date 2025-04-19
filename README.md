@@ -209,7 +209,7 @@ SELECT * FROM user;
 
 ### 6. Create a Database Connection in NetBeans
 
-- Open Services tab > Databases > Right-click > New Connection
+**Open Services tab > Databases > Right-click > New Connection**
 
 - Driver: MySQL (add JAR if not listed)
 
@@ -264,7 +264,7 @@ private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
 ## 🎉 You’re Done!
 
 #### Congratulations! 🎊
-#####You’ve successfully set up and run the LostandFoundSystem. You can now:
+##### You’ve successfully set up and run the LostandFoundSystem. You can now:
 
 - Log in as admin or user
 
