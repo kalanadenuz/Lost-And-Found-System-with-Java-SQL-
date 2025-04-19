@@ -282,7 +282,56 @@ private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
 
 - Missing Files: Recopy files from ZIP if needed
 
+### Snapshots🖥️📸 
+
+- Login UI
+
+  ![Screenshot 2025-04-19 151303](https://github.com/user-attachments/assets/dc74cb63-393c-4860-bf2e-ef0ed5584c2c)
+
+ - Register UI
   
+     ![Screenshot 2025-04-19 202440](https://github.com/user-attachments/assets/2a8c264b-0719-45c4-973e-cd4fb73239a1)
+
+- Home UI
+
+  ![Screenshot 2025-04-19 151453](https://github.com/user-attachments/assets/f4ed5843-af28-43be-817d-cab5ff07a630)
+
+- Admin Panel
+
+  ![Screenshot 2025-04-19 151348](https://github.com/user-attachments/assets/47c3e5c9-bed9-4ff4-9f1d-816fba822f18)
+
+- Individual Report View
+
+  ![Screenshot 2025-04-19 151721](https://github.com/user-attachments/assets/d4a1ad63-5ad7-4b35-81d8-82337126b875)
+
+- Create New Report Form
+
+  ![Screenshot 2025-04-19 151406](https://github.com/user-attachments/assets/9b208281-a6b5-4b36-8613-9cc74be90d1d)
+
+- Manage Individual Reports UI
+
+  ![Screenshot 2025-04-19 151434](https://github.com/user-attachments/assets/f4c92ee3-630a-44f5-9a3a-0583414ee660)
+
+- Search Feature
+
+  ![Screenshot 2025-04-19 151511](https://github.com/user-attachments/assets/e11e8d8e-a986-4fa3-b3b6-fc533aa786a1)
+
+- Manage All Reports UI
+
+  ![Screenshot 2025-04-19 151606](https://github.com/user-attachments/assets/591a44c7-49a9-4278-895b-34d491270360)
+
+- Manage Users UI
+
+  ![Screenshot 2025-04-19 151545](https://github.com/user-attachments/assets/938069e3-3e92-48c9-a4dd-25e0cbd35282)
+
+- 
+
+
+
+
+
+
+   
 
 ---
 
