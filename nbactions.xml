@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.3.0:exec</goal>
+        </goals>
+        <properties>
+            <exec.vmArgs>-Xms512m -Xmx1024m -Djava.util.logging.config.file=src/main/resources/logging.properties</exec.vmArgs>
+            <exec.args>${exec.vmArgs} -classpath %classpath com.lostfound.app.LostandFoundSystem ${exec.appArgs}</exec.args>
+            <exec.appArgs></exec.appArgs>
+            <exec.mainClass>com.lostfound.app.LostandFoundSystem</exec.mainClass>
+            <exec.executable>java</exec.executable>
+        </properties>
+    </action>
+    <action>
+        <actionName>debug</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.3.0:exec</goal>
+        </goals>
+        <properties>
+            <exec.vmArgs>-Xms512m -Xmx1024m -Djava.util.logging.config.file=src/main/resources/logging.properties -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005</exec.vmArgs>
+            <exec.args>${exec.vmArgs} -classpath %classpath com.lostfound.app.LostandFoundSystem ${exec.appArgs}</exec.args>
+            <exec.appArgs></exec.appArgs>
+            <exec.mainClass>com.lostfound.app.LostandFoundSystem</exec.mainClass>
+            <exec.executable>java</exec.executable>
+            <jpda.listen>true</jpda.listen>
+        </properties>
+    </action>
+    <action>
+        <actionName>test</actionName>
+        <packagings>
+            <packaging>*</packaging>
+        </packagings>
+        <goals>
+            <goal>test</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>test.single</actionName>
+        <packagings>
+            <packaging>*</packaging>
+        </packagings>
+        <goals>
+            <goal>process-test-classes</goal>
+            <goal>surefire:test</goal>
+        </goals>
+        <properties>
+            <test>${packageClassName}</test>
+        </properties>
+    </action>
+    <action>
+        <actionName>debug.test.single</actionName>
+        <packagings>
+            <packaging>*</packaging>
+        </packagings>
+        <goals>
+            <goal>process-test-classes</goal>
+            <goal>surefire:test</goal>
+        </goals>
+        <properties>
+            <test>${packageClassName}</test>
+            <forkMode>once</forkMode>
+            <maven.surefire.debug>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005</maven.surefire.debug>
+            <jpda.listen>true</jpda.listen>
+        </properties>
+    </action>
+</actions>
