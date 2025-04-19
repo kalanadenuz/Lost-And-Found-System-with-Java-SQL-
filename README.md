@@ -324,7 +324,7 @@ private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
 
   ![Screenshot 2025-04-19 151545](https://github.com/user-attachments/assets/938069e3-3e92-48c9-a4dd-25e0cbd35282)
 
-- 
+  
 
 
 
