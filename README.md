@@ -251,20 +251,22 @@ private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
 
 - OR right-click the project and choose Run
 
-#### Login Accounts
+**Login Accounts**
 
-##### Admin Account
+**Admin Account**
 - Email: `alice@example.com`
 - Password: `password123`
 
-##### User Account
+**User Account**
 - Email: `hank@example.com`
 - Password: `password123`
 
 ## 🎉 You’re Done!
 
-#### Congratulations! 🎊
-##### You’ve successfully set up and run the LostandFoundSystem. You can now:
+**Congratulations! 🎊
+You’ve successfully set up and run the LostandFoundSystem.** 
+
+**You can now**:
 
 - Log in as admin or user
 
@@ -274,15 +276,15 @@ private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
 
 - View and manage reports
 
-#### Enjoy! 😊
+ **Enjoy! 😊**
 
 ## 🛠 Troubleshooting
 
-- Database Connection Failed: Ensure MySQL Server is running and Check credentials in DBConnection.java
+- **Database Connection Failed**: Ensure MySQL Server is running and Check credentials in DBConnection.java
 
-- Missing Files: Recopy files from ZIP if needed
+- **Missing Files**: Recopy files from ZIP if needed
 
-### Snapshots🖥️📸 
+## Snapshots🖥️📸 
 
 - Login UI
 
