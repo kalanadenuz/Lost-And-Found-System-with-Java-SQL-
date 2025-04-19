@@ -139,7 +139,7 @@ Ensure you have the following installed and configured on your Windows machine:
 ### 2. Set Up the MySQL Database
 
 - Open the SQL file:  
-  `C:\Lost and Found System\sql\lostfounddb.sql`
+  `C:\Lost and Found System\lostfounddb.sql`
 - Launch MySQL CLI:
 
 ```bash
@@ -152,6 +152,7 @@ mysql -u your_username -p
 ```sql
 SHOW TABLES;
 ```
+
 - Expected Output:
 found_item, item, lost_item, report, user
 - Check data:
@@ -160,10 +161,11 @@ found_item, item, lost_item, report, user
 SELECT * FROM user;
 ```
 ### 3. Create a New NetBeans Project
+
 - Launch NetBeans IDE
 
 - Create a project:
-`File > New Project > Java with Maven > Java Application`
+**File > New Project > Java with Maven > Java Application**
 
 - Set:
 
@@ -182,7 +184,7 @@ SELECT * FROM user;
 - Overwrite when prompted.
 
 - In NetBeans:
-Right-click project > Clean and Build
+**Right-click project > Clean and Build**
 
 ### 5. Install MySQL Connector/J
 
@@ -225,7 +227,7 @@ Right-click project > Clean and Build
 
 - Open DBConnection.java: Location: 
 
-`Projects > LostandFoundSystem > Source Packages > com.lostfound.config`
+**Projects > LostandFoundSystem > Source Packages > com.lostfound.config**
 
 - Update password:
 
