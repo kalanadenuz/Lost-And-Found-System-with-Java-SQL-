@@ -97,12 +97,190 @@ Lost and Found System/
 └───pom.xml            # Maven project configuration
 ```
 
-### 🚀 How to Run
-1. Clone the repository.
-2. Import the project into **NetBeans**.
-3. Set up the **MySQL database** using the provided schema.
-4. Update database credentials in the config package.
-5. Run the application from the main UI class.
+# 🚀 How to Run on Windows
+
+Welcome to the **Lost and Found Management System**! Follow this step-by-step guide to set up and run the application on your Windows machine. This guide is designed to be beginner-friendly, ensuring you can launch the login screen and explore the system with ease. Let’s get started! 🌟
+
+---
+
+## 📢 Important Notices
+
+Before you begin, please read these notices carefully to ensure a smooth setup:
+
+- **Read This Guide Thoroughly**: Follow each step in order to avoid issues.  
+- **Do Not Modify Code Unless Instructed**: Changing notmentioned code may break the application. If you accidentally modify something, press `Ctrl+Z` to undo.  
+- **Follow Steps Sequentially**: Each step builds on the previous one, so complete them in order.  
+- **Contact for Support**: If you encounter errors, email me at **kalanadenuz2002@gmail.com** for assistance.
+
+---
+
+## 🛠 Prerequisites
+
+Ensure you have the following installed and configured on your Windows machine:
+
+- **JDK 22**: Installed and added to your system’s PATH. [Download JDK 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)  
+- **NetBeans IDE**: Version 12 or later, configured for Maven projects. [Download NetBeans](https://netbeans.apache.org/)  
+- **MySQL Community Server**: Version 8.0 or later, with a user account and password set up. [Download MySQL](https://dev.mysql.com/downloads/mysql/)
+
+---
+
+## 📋 Step-by-Step Guide
+
+### 1. Download and Extract the Repository
+
+- Download the repository as a ZIP file from GitHub.  
+  Click **Code > Download ZIP**
+- Extract to:  
+  `C:\Lost and Found System\`
+- Verify all files are present including image files.
+
+---
+
+### 2. Set Up the MySQL Database
+
+- Open the SQL file:  
+  `C:\Lost and Found System\sql\lostfounddb.sql`
+- Launch MySQL CLI:
+
+```bash
+mysql -u your_username -p
+
+```
+
+- Paste and run the SQL script in MySQL CLI.
+  
+```sql
+SHOW TABLES;
+```
+- Expected Output:
+found_item, item, lost_item, report, user
+- Check data:
+
+```sql
+SELECT * FROM user;
+```
+### 3. Create a New NetBeans Project
+- Launch NetBeans IDE
+
+- Create a project:
+`File > New Project > Java with Maven > Java Application`
+
+- Set:
+
+- Project Name: LostandFoundSystem
+
+- Location: `C:\Users\YourUsername\Documents\NetBeansProjects\`
+
+### 4. Copy Repository Files to Project
+
+- From:
+`C:\Lost and Found System\`
+
+- To:
+`C:\Users\YourUsername\Documents\NetBeansProjects\LostandFoundSystem\`
+
+- Overwrite when prompted.
+
+- In NetBeans:
+Right-click project > Clean and Build
+
+### 5. Install MySQL Connector/J
+
+- Download: MySQL Connector/J 8.0.30
+
+- Extract to:
+`C:\mysql-connector-java-8.0.30\`
+
+- Open pom.xml:
+```xml
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.30</version>
+</dependency>
+```
+- verify this code in that xml file
+  
+- Update version if using a different one
+  
+- Save and Clean and Build
+
+### 6. Create a Database Connection in NetBeans
+
+- Open Services tab > Databases > Right-click > New Connection
+
+- Driver: MySQL (add JAR if not listed)
+
+- Database: lostfounddb
+
+- Username: your MySQL username
+
+- Password: your MySQL password
+
+- Test Connection
+
+- Finish and connect
+ 
+### 7. Update Database Credentials
+
+- Open DBConnection.java: Location: 
+
+`Projects > LostandFoundSystem > Source Packages > com.lostfound.config`
+
+- Update password:
+
+```java
+private static final String PASSWORD = "your_password";
+```
+- Update URL:
+
+```java  
+private static final String URL = "jdbc:mysql://localhost:3306/lostfounddb";
+```
+- Remove any additional URL parameters
+  
+- Save file
+
+### 8. Run the Application
+
+- Open LostandFoundSystem.java: com.lostfound.app
+
+- Right-click and select Run File
+
+- OR right-click the project and choose Run
+
+#### Login Accounts
+
+##### Admin Account
+- Email: `alice@example.com`
+- Password: `password123`
+
+##### User Account
+- Email: `hank@example.com`
+- Password: `password123`
+
+## 🎉 You’re Done!
+
+#### Congratulations! 🎊
+#####You’ve successfully set up and run the LostandFoundSystem. You can now:
+
+- Log in as admin or user
+
+- Register users
+
+- Report lost/found items
+
+- View and manage reports
+
+#### Enjoy! 😊
+
+## 🛠 Troubleshooting
+
+- Database Connection Failed: Ensure MySQL Server is running and Check credentials in DBConnection.java
+
+- Missing Files: Recopy files from ZIP if needed
+
+  
 
 ---
 
