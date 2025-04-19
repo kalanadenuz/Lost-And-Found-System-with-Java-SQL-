@@ -30,26 +30,71 @@ The system is a showcase of Object-Oriented Programming (OOP) principles, ensuri
 
 ### 📁 Project Structure
 ```
-Lost and FOund System
-├───images
-│   ├───found        # Images for found items (referenced in database)
-│   └───lost         # Images for lost items (referenced in database)
-└───src
-    └───main
-        ├───java
-        │   └───com
-        │       └───lostfound
-        │           ├───app       # Application entry point (e.g., LostandFoundSystem.java)
-        │           ├───config    # Database connection setup (e.g., DBConnection.java)
-        │           ├───dao       # Data Access Objects for CRUD operations (e.g., UserDAO, ReportDAO)
-        │           ├───model     # Data models (e.g., User, Item, LostItem, FoundItem, Report)
-        │           ├───service   # Business logic and service interfaces (e.g., UserService, ReportService)
-        │           └───ui        # Swing-based UI screens (e.g., RegisterUI, ReportUI, UserPanelUI)
-        └───resources
-            ├───icons             # UI icons (e.g., found.png, lost.png)
-            └───logging.properties # Logging configuration for java.util.logging
-├───sql
-    └───schema.sql           # MySQL schema and AI-generated data
+Lost and Found System/
+├───images/
+│   ├───found/        # Images for found items
+│   └───lost/         # Images for lost items
+│
+├───src/
+│   └───main/
+│       ├───java/
+│       │   └───com/
+│       │       └───lostfound/
+│       │           ├───app/       # Application entry point
+│       │           │   └── MainApp.java
+│       │           │
+│       │           ├───config/    # Configuration classes
+│       │           │   ├── DBConfig.java
+│       │           │   └── AppConfig.java
+│       │           │
+│       │           ├───dao/       # Data Access Objects
+│       │           │   ├── UserDAO.java
+│       │           │   ├── ItemDAO.java
+│       │           │   ├── LostItemDAO.java
+│       │           │   ├── FoundItemDAO.java
+│       │           │   ├── ReportDAO.java
+│       │           │   └── AdminDAO.java
+│       │           │
+│       │           ├───model/     # Data models
+│       │           │   ├── User.java
+│       │           │   ├── Item.java
+│       │           │   ├── LostItem.java
+│       │           │   ├── FoundItem.java
+│       │           │   ├── Report.java
+│       │           │   ├── Admin.java
+│       │           │   └── ReportDetails.java
+│       │           │
+│       │           ├───service/   # Business logic
+│       │           │   ├── UserService.java
+│       │           │   ├── ItemService.java
+│       │           │   ├── ReportService.java
+│       │           │   ├── LostItemService.java
+│       │           │   ├── FoundItemService.java
+│       │           │   └── AdminService.java
+│       │           │
+│       │           └───ui/        # Swing UI components
+│       │               ├── auth/
+│       │               │   ├── LoginUI.java
+│       │               │   └── RegisterUI.java
+│       │               ├── admin/
+│       │               │   ├── AdminPanelUI.java
+│       │               │   ├── ManageReportsUI.java
+│       │               │   └── ManageUsersUI.java
+│       │               ├── user/
+│       │               │   ├── HomeUI.java
+│       │               │   ├── CreateReportUI.java
+│       │               │   └── ManageMyReportsUI.java
+│       │               └── shared/
+│       │                   ├── ReportUI.java
+│       │                   └── UserPanelUI.java
+│       │
+│       └───resources/
+│           ├── logging.properties
+│           └── application.properties
+│
+├───nbactions.xml      # NetBeans configuration
+├───lostfounddb.sql    # MySQL database schema and data
+└───pom.xml            # Maven project configuration
 ```
 
 ### 🚀 How to Run
