@@ -17,7 +17,7 @@ Welcome to the **Lost and Found Management System**, a sophisticated Java-based 
 - **Java**: Swing for UI, JDBC for database connectivity.
 - **MySQL**: Robust relational database for data persistence.
 - **NetBeans IDE**: Maven-based project for streamlined development.
--**OOP Design Patterns**: MVC (Model-View-Controller), DAO (Data Access Object), and Service Layer patterns for clean architecture.
+- **OOP Design Patterns**: MVC (Model-View-Controller), DAO (Data Access Object), and Service Layer patterns for clean architecture.
 
 ### 🏛️ OOP Principles Applied
 The system is a showcase of Object-Oriented Programming (OOP) principles, ensuring a maintainable and scalable codebase:
